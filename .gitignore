@@ -1,0 +1,41 @@
+# Local AI assistant configuration
+.agents/
+.claude/
+.codex
+
+# Generated images and experiment artifacts
+outputs/
+runs/
+wandb/
+logs/
+*.log
+
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments and secrets
+.env
+.env.*
+.venv/
+venv/
+env/
+
+# Model weights and local caches
+.cache/
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store

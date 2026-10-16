@@ -1,0 +1,19 @@
+# Install the torch==2.9.0 build matching your CUDA driver first.
+# See https://pytorch.org/get-started/locally/
+torch==2.9.0
+
+# FLUX compatibility is validated against this exact diffusion stack.
+# Core diffusion runtime
+diffusers==0.30.2
+transformers==4.44.2
+accelerate==0.34.0
+
+# Directly imported utilities
+numpy==2.1.2
+packaging==25.0
+
+# Caption cleaning and T5 tokenization
+sentencepiece==0.2.1
+protobuf==3.20.3
+beautifulsoup4==4.15.0
+ftfy==6.3.1
