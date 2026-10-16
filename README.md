@@ -9,9 +9,7 @@
 
 [*SeungJu Cha*](https://scholar.google.com/citations?user=lVmI_MgAAAAJ&hl=ko)&nbsp;([LinkedIn](https://www.linkedin.com/in/seungju-cha-3a3061301/?isSelfProfile=true))&nbsp;·&nbsp;[*Ye-Chan Kim*](https://scholar.google.com/citations?user=HBHVFMIAAAAJ&hl=ko)&nbsp;·&nbsp;[*HyunGee Kim*](https://scholar.google.com/citations?user=Bzq0v-4AAAAJ&hl=ko)&nbsp;·&nbsp;[*Sungho Koh*](https://openreview.net/profile?id=~Sungho_Koh1)&nbsp;·&nbsp;*Dong-Jin Kim*
 
-**📄 Paper · arXiv: coming soon**
-
-<!-- Replace the line above with: [Paper](PAPER_URL) · [arXiv](ARXIV_URL) -->
+**[📄 Paper · arXiv](http://arxiv.org/abs/2610.22370)**
 
 <table>
 <tr>
@@ -54,9 +52,7 @@ pip install -r requirements.txt
 ## Generation
 
 Run the commands from the repository root. `--compression_ratio` is the fraction of
-image tokens removed by merging. Add `--deterministic` when exact repeatability
-is required. Deterministic mode disables Flash SDP, memory-efficient SDP, TF32,
-and cuDNN benchmarking, so generation can be slower, especially for FLUX.
+image tokens removed by merging.
 
 ### Stable Diffusion 1.5
 
@@ -87,7 +83,6 @@ python -m generation.pixart_generate \
 ```bash
 python -m generation.flux_generate \
   --compression_ratio 0.3 \
-  --deterministic \
   --prompt "An old toilet with a hello kitty cover top"
 ```
 
